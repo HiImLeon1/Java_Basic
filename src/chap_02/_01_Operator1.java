@@ -37,10 +37,28 @@ public class _01_Operator1 {
         //증강 연산
         int val;
         val = 10;
-        System.out.println(val);
+        System.out.println(val); //10
+        System.out.println(++val); // 11
         val = val + 1;
-        val++;
-        ++val;
+        System.out.println(val);//12
+
+        val = 10;
+        System.out.println(val);//10
+        System.out.println(val++);//val 다음 ++ 위치에 따라 처리순서가 달라짐(해당 코드는 출력 후 ++됨) 10
+        System.out.println(val);//11
+
+        val = 10;
+        System.out.println(val);//10
+        System.out.println(--val);//9
+        System.out.println(val--);//위와동일 //9
+        System.out.println(val);//8
+
+//        은행 대기인원
+        int waiting = 0;
+        System.out.println("대기 인원 : " + waiting++);//대기 인원 0
+        System.out.println("대기 인원 : " + waiting++);//대기 인원 1
+        System.out.println("대기 인원 : " + waiting++);//대기 인원 2
+        System.out.println("총 대기 인원 : " + waiting);//대기 인원 3
 
 
     }
