@@ -32,6 +32,7 @@ public class Main {
         System.out.println(donut.name + "의 면적은" + area);
         System.out.println("종료");
 
+
     }
 
 
