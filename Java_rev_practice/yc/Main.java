@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        YalcoChicken store1 = new YalcoChicken(1,"울산");
 
-        YalcoChicken store2 = new YalcoChicken(3,"삼산");
+        YalcoChicken store1 = new YalcoChicken("판교");
+        YalcoChicken store2 = new YalcoChicken("울산");
+        YalcoChicken store3 = new YalcoChicken("제주");
+        String st1Intro = store1.intro();
 
-      String[] intros = {store1.intro(), store2.intro()};
-        System.out.printf(Arrays.toString(intros));
-        String h = store1.intro();
-        System.out.println(h);
+
     }
+
 }
